@@ -13,10 +13,7 @@ void Play_mode();
 
 int main() {
 
-    /*
-     * TODO: Use polymorphism in a program of your choice, utilizing at least ten objects of the Cloud and Comet Monster classes.
-     *
-     */
+  //Prompt user for selection
     int choice = get_int_input("Please Select who would would like to play as. Press 1 to play as a Monster or press 2 to play as a person","Invalid Seection, Please try again: ",1,2);
 
     if(choice == 1){
