@@ -20,7 +20,7 @@ bool Closet_Monster::is_open() const {
 }
 
 
-// TODO: Implement this method in Closet_Monster.cpp
+
 string Closet_Monster::scare() {
     if(!door_is_open){
         return ("Knock on door");
