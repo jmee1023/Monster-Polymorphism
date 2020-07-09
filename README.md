@@ -1,25 +1,5 @@
-Water_monster_main
-      The reason eat_person is not polymorphism is because it performs the same actions regaurdless of the the type. It is not an overridden in the sub classes
-      Therefore it is not polymorphism
+This project demonsrates the use of polymorphism extensively. There are three categories of monsters for this project: Water monsters, Darkness monsters, and skymonsters. All of the monsters within the categories have unique abilites that are demonstrated in the minigame(can be found in "main". The superclass for the water monsters, is the watermonster itself, and its subclasses are the lake monster and the Sea monster. The superclass for the darkness monsters, is darkness monster itself, and its subclasses are the closet monster and under the bed monster. The last superclass is the sky monster and its sublclasses are cloud monster and comet monster. All of these sublclasses inherit a majority of their abilities from their superclass but also have useful abilites of their own that can be demonstarted in the files that end in "main". Whether it's their "scare" tactic, or their base constructor call, the game becomes pleasantly unique.  
 
-     The scare method is a form of polymorphism because it has been overwritten in the subclasses and performs slightly different for each class
+These minigames demonstrate the monsters special abilites in an interactive way, giving the user a number of "moves" to pick from. The programs are also very repsonsive to the change caused by user input, by constantly displaying the current state of the monster or even number of people eaten! 
 
-
- Darkness_monster_main
-    The scare method is a form of polymorphism because it acts different in for each subclass. Under_bed_monster and closet_monster have overwrtitten the method
-    and have different characteristics
-
-    For these classes the poke method is not polymorphic because it is declared in the super class and not over written in any subclass
-
-
-    Sky_monster_main
-        For my main method I followed a similar format of Water_monster_main. I populated a vector of unique pointers of both sub classes randomly.
-        Based on user input i then displayed each of the classes functions. You can clearly see the classes polymorphic behavior when i call the same function
-        but different actions occur based on the type of monster .
-
-
-      Test cases:
-        The test case implementation went very well. I have a perfect pass rate except once in a while the under the bed monster test case
-        fails. I believe the reason for this was in the if conditonal I used a method the returns an integer and that is what causes it to fail
-        I tried to do a toString call but then the test case was failing much more often that how I originally had it so I opt with my original design
-
+I have also demonstrated a number of test cases within the files that end in "Testing". In order to make sure these functions were working properly, a number of test cases had to be put into place and run on.
