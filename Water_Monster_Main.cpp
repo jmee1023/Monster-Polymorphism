@@ -40,11 +40,11 @@ int get_int_input(string prompt, string invalid, int low, int high) {
 
 void monster_mode() {
     Lake_Monster champ(0);
-    // TODO: Print welcome message that includes the name Champ the Lake Monster
+    //  Print welcome message that includes the name Champ the Lake Monster
     cout << "Welcome! Your Lake monsters name will be champ!" << endl;
-    // TODO: Create vector of unique pointers to Water Monsters called friends
+    //  Create vector of unique pointers to Water Monsters called friends
     vector<unique_ptr<Water_Monster>> friends;
-    // TODO: Populate vector with 10 monsters, choosing Lake vs Sea randomly
+    //  Populate vector with 10 monsters, choosing Lake vs Sea randomly
     srand(time(NULL));
     for (int i = 0; i < 10; ++i) {
         if (rand() % 2) {
@@ -54,13 +54,12 @@ void monster_mode() {
         }
     }
 
-    // TODO: Call get_int_input to prompt the user to choose 1 for meal time, 2 for scare time, or 3 to exit.
+    //  Call get_int_input to prompt the user to choose 1 for meal time, 2 for scare time, or 3 to exit.
     int select = get_int_input("Please select an option: 1: for meal time 2: for scare time  3: to exit ", "Invalid input, try again:", 1,3);
     //cout << friends[0]->get_number_people_eaten()<< endl;
-    // TODO: Create a loop that runs until the user chooses option 3:
+    //  Create a loop that runs until the user chooses option 3:
     while (select != 3){
         // - If 1 is chosen, loop through populated vector and call eat_person on each.
-        // - This is NOT an example of polymorphism. Why? Answer in your README file.
         // eat_person is performs the same actions regaurdless of the the type. It is not an overridden in the sub classes
         //Therefore it is not polymorphism
         if (select == 1){
@@ -72,7 +71,6 @@ void monster_mode() {
         }
         //      - If 2 is chosen, print message saying "This is how my friends scare:"
         //          - Loop through populated vector and call scare method on each pointer, printing return value to console
-        //          - This IS an example of polymorphism. Why? Answer in your README file.
         //          - Print message saying how Champ scares, then call and print scare method on champ.
         if(select == 2){
             cout<<"This is how my friends scare"<< endl;
